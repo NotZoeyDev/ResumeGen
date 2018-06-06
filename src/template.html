@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{title}</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8" />
+		<meta name="theme-color" content="{theme-color}" />
+		<link rel="shortcut icon" type="image/jpg" href="{favicon}"/>
+	</head>
+	<body>
+		<section class="header" style="background-color: {header-color}">
+			<h1>Hi, I'm {name}.</h1>
+
+			<span>Click <a href="#about">here</a> to learn more about me.</span>
+		</section>
+
+		{section-container}
+
+		<section id="about" class="me" style="background-color: {about-color}">
+			<aside>
+				<h1>{about-me-title}</h1>
+
+				<article>
+					{about-me-text}
+				</article>
+			</aside>
+
+			<aside class="contact">
+				<h1>Contact me</h1>
+
+				<article>
+					{contact-links}
+				</article>
+			</aside>
+		</section>
+	</body>
+</html>

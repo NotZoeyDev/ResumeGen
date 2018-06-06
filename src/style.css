@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+	color: white;
+}
+
+img {
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section.reversed {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+section {
+	display: flex;
+	min-width: 100%;
+	min-height: 50vh;
+	display: relative;
+	overflow: hidden;
+	box-shadow: 0px 25px 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+	min-height: 100vh;
+}
+
+.header h1 {
+	font-size: 15vh;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+	margin: 0;
+	width: 100%;
+}
+
+.header span {
+	display: block;
+	position: absolute;
+	bottom: 3vh;
+	width: 100%;
+	text-align: center;
+	font-size: 5vh;
+}
+
+section h1 {
+	position: relative;
+	margin: 15px;
+	font-size: 10vh;
+}
+
+section article {
+	margin: 15px;
+	font-size: 3vh;
+}
+
+section.reversed img {
+	margin: 25px auto 25px 25px;
+}
+
+section img {
+	margin: 25px 25px 25px auto;
+	float: right;
+	height: 50vh;
+	box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 1000px) {
+	section.reversed, section {
+		flex-direction: column;
+	}
+
+	section.reversed img, section img {
+		margin: 25px auto 25px auto;
+		width: 100%;
+		height: auto;
+	}
+
+	.header h1 {
+		font-size: 15vw;
+	}
+
+	section h1 {
+		font-size: 10vw;
+	}
+
+	section article {
+		font-size: 1vh;
+	}
+}
+
+.me .contact {
+	margin-left: auto;
+	text-align: right;
+}
